@@ -10,6 +10,8 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 //This is the model class for the Registration 
 
+//Here I have done validation also
+
 public class User {
 	
 	@NotNull
