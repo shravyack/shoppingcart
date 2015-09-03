@@ -8,6 +8,8 @@ import org.hibernate.validator.constraints.NotEmpty;
 
 //import com.emc.shoppingcart.services.User;
 
+//This is the model class for the Registration 
+
 public class User {
 	
 	@NotNull

@@ -4,6 +4,7 @@ import java.awt.List;
 //import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Map;
 
 import javax.validation.Valid;
 
@@ -99,9 +100,10 @@ public class HomeController {
 	
   }
 	@RequestMapping(value = "/AdminLanding", method = RequestMethod.POST)
-	public String userLogin(@ModelAttribute("adminList") User user, Model model) {
+	public String userLogin(@ModelAttribute("adminList") User user, Model mohit) {
 		//System.out.println(user.getEmailId());
-		Map<String,Object> data=listuser.user(user.getFirstName(), user.getLastName(),user.getEmailId()); 
+		Map<String,Object> data=listuser.users(user.getFirstName(), user.getLastName(),user.getEmailId()); 
+		
 		return "";
 					
 	}
